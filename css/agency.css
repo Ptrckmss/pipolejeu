@@ -7,9 +7,6 @@ body {
   overflow-x: hidden;
   font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
-p {
-  line-height: 1.75; }
-
 a {
   color: #fed136; }
   a:hover {
@@ -153,7 +150,7 @@ header.masthead {
     header.masthead .intro-text .intro-heading {
       font-size: 50px;
       font-weight: 700;
-      line-height: 50px;
+      line-height: 20px;
       margin-bottom: 25px;
       font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
@@ -168,9 +165,9 @@ header.masthead {
       margin-bottom: 25px;
       font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
     header.masthead .intro-text .intro-heading {
-      font-size: 75px;
+      font-size: 30px;
       font-weight: 700;
-      line-height: 75px;
+      line-height: 20px;
       margin-bottom: 50px;
       font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; } }
 

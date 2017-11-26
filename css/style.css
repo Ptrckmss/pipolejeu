@@ -1,0 +1,27 @@
+.hipo-carte {
+    height: 300px;
+    min-height: 300px;
+    background-color: grey;
+}
+
+.reverse {
+    background-color: lightgray;
+}
+
+@keyframes play {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: -500px;
+    }
+}
+
+@keyframes play-reverse {
+    from {
+        background-position: -500px;
+    }
+    to {
+        background-position: 0;
+    }
+}

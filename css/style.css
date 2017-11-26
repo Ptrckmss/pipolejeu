@@ -1,16 +1,21 @@
 @font-face {
-    font-family: Chewy;
-    src: url('../font/Chewy-Regular.ttf');
-}
-
-@font-face {
     font-family: Ubuntu;
     src: url('../font/ubuntu-font-family-0.83/Ubuntu-R.ttf');
 }
 
+
+@font-face {
+    font-family: Chewy;
+    src: url('../font/Chewy-Regular.ttf');
+}
+
 header.masthead{
     background-image: url('../img/mito-holidays.png');
-    filter: ;
+}
+
+
+.intro-heading h1 {
+    font-family: 'Chewy';
 }
 
 .intro-lead-in p {

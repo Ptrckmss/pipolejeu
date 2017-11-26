@@ -100,7 +100,7 @@ body {
     width: 150px;
 }
 
-.container {
+.container-card {
     width: 300px;
     height: 427px;
     position: relative;
@@ -132,8 +132,9 @@ body {
 }
 
 .card .back {
-    background: black;
+    /*background: black;*/
     transform: rotateY(180deg);
+    border-radius: 10px;
 }
 
 .card.flipped {

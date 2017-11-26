@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    height: 3000px; /* test fixed + scroll */
+}
+
+/* code du tutoriel ci-dessous */
+
+#tagline{
+    font-size: 50px;
+    font-weight: bold ;
+    margin-left: 40px;
+    font-family: 'Chewy', cursive;
+}
+
+#volet {
+    width: 400px;
+    padding: 10px;
+    background: #e0a800;
+    color: #fff;
+}
+
+#volet a.ouvrir,
+#volet a.fermer {
+    padding: 10px 25px;
+    background: #e0a800;
+    color: #fff;
+    text-decoration: none;
+}
+
+#volet {
+    position: absolute;
+    left: -420px; /* test fixed + scroll, on retire la position top */
+    -webkit-transition: all .5s ease-in;
+    -moz-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+
+#volet a.ouvrir,
+#volet a.fermer {
+    position: absolute;
+    right: -77px;
+    top: 150px;
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -moz-radius: 0 0 8px 8px;
+    border-radius: 0 0 8px 8px;
+}
+
+#volet a.fermer {
+    display: none;
+}
+
+#volet:target {
+    left: 0px;
+}
+
+/* code pour la fermeture */
+
+#volet:target a.fermer {
+    display: block;
+}
+
+#volet:target a.ouvrir {
+    display: none;
+}
+
+#volet_clos:target #volet {
+    left: -405px;
+}
+
+/* test fixed + scroll */
+#volet_clos {
+    position: fixed;
+    top: 55px;
+    left: 0;
+}
+
+#img-scenario {
+    width: 500px;
+    height: 600px;
+}
+
+.header {
+    height: 150px;
+    width: 100%;
+    background-color: #e0a800;
+}
+
+.header img {
+    position: relative;
+    height: 150px;
+    width: 150px;
+}
+
+.container {
+    width: 300px;
+    height: 427px;
+    position: relative;
+    perspective: 800px;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.card img {
+}
+
+.card figure {
+    margin: 0;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.card .front {
+    background: transparent;
+}
+
+.card .back {
+    background: black;
+    transform: rotateY(180deg);
+}
+
+.card.flipped {
+    transform: rotateY(180deg);
+}

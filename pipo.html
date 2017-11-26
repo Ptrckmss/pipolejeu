@@ -1,0 +1,143 @@
+<html>
+<head>
+
+    <title>Hipo, le jeu</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/pipo.css" rel="stylesheet">
+    <link href="font/Chewy-Regular.ttf" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+    <img class="img-logo img-fluid" src="images/pipo.png">
+    <span id="tagline">Le vrai jeu des fausses infos</span>
+</div>
+
+
+
+<!-- Carte -->
+<div id="hipo-grid" class="container-fluid">
+    <div class="row">
+        <div class="col-3 p-3">
+            <section class="container">
+                <div class="card hipo-carte">
+                    <figure class="front"><img class="img-fluid" src="images/dos_de_carte.png"></figure>
+                    <figure class="back p-1"><img class="img-fluid" src="images/commentaires.png"></figure>
+                </div>
+            </section>
+        </div>
+        <div class="col-3 p-3">
+            <section class="container">
+                <div class="card hipo-carte">
+                    <figure class="front"><img class="img-fluid" src="images/dos_de_carte.png"></figure>
+                    <figure class="back p-1"><img class="img-fluid" src="images/go_goal.png"></figure>
+                </div>
+            </section>
+        </div>
+        <div class="col-3 p-3">
+            <section class="container">
+                <div class="card hipo-carte">
+                    <figure class="front"><img class="img-fluid" src="images/dos_de_carte.png"></figure>
+                    <figure class="back p-1"><img class="img-fluid" src="images/swagchat.png"></figure>
+                </div>
+            </section>
+        </div>
+        <div class="col-3 p-3">
+            <section class="container">
+                <div class="card hipo-carte">
+                    <figure class="front"><img class="img-fluid" src="images/dos_de_carte.png"></figure>
+                    <figure class="back p-1"><img class="img-fluid" src="images/go_goal.png"></figure>
+                </div>
+            </section>
+        </div>
+        <div class="col-3 p-3">
+            <section class="container">
+                <div class="card hipo-carte">
+                    <figure class="front"><img class="img-fluid" src="images/dos_de_carte.png"></figure>
+                    <figure class="back p-1"><img class="img-fluid" src="images/go_goal.png"></figure>
+                </div>
+            </section>
+        </div>
+        <div class="col-3 p-3">
+            <section class="container">
+                <div class="card hipo-carte">
+                    <figure class="front"><img class="img-fluid" src="images/dos_de_carte.png"></figure>
+                    <figure class="back p-1"><img class="img-fluid" src="images/go_goal.png"></figure>
+                </div>
+            </section>
+        </div>
+        <div class="col-3 p-3">
+            <section class="container">
+                <div class="card hipo-carte">
+                    <figure class="front"><img class="img-fluid" src="images/dos_de_carte.png"></figure>
+                    <figure class="back p-1"><img class="img-fluid" src="images/go_goal.png"></figure>
+                </div>
+            </section>
+        </div>
+        <div class="col-3 p-3">
+            <section class="container">
+                <div class="card hipo-carte">
+                    <figure class="front"><img class="img-fluid" src="images/dos_de_carte.png"></figure>
+                    <figure class="back p-1"><img class="img-fluid" src="images/go_goal.png"></figure>
+                </div>
+            </section>
+        </div>
+        <div class="col-3 p-3">
+            <section class="container">
+                <div class="card hipo-carte">
+                    <figure class="front"><img class="img-fluid" src="images/dos_de_carte.png"></figure>
+                    <figure class="back p-1"><img class="img-fluid" src="images/go_goal.png"></figure>
+                </div>
+            </section>
+        </div>
+        <div class="col-3 p-3">
+            <section class="container">
+                <div class="card hipo-carte">
+                    <figure class="front"><img class="img-fluid" src="images/dos_de_carte.png"></figure>
+                    <figure class="back p-1"><img class="img-fluid" src="images/go_goal.png"></figure>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+
+<!-- Volet -->
+<div id="volet_clos">
+    <div id="volet">
+        <img id="img-scenario" class="img-fluid" src="images/carte_scenario.png">
+
+        <a href="#volet" class="ouvrir" aria-hidden="true">Scénario !</a>
+        <a href="#volet_clos" class="fermer" aria-hidden="true">Fermer !</a>
+    </div>
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script>
+    var reversed = null;
+    $(document).ready(function () {
+        $('.hipo-carte').on('click', function (e) {
+            e.preventDefault();
+            if (reversed) {
+                $(reversed).removeClass('flipped');
+            }
+            $(this).addClass('flipped')
+            reversed = this;
+        });
+    });
+
+
+    /*    $(document).ready(function() {
+     $('.hipo-carte').on("click", function() {
+     animateButton(this);
+     });
+     });*/
+</script>
+
+</body>
+</html>

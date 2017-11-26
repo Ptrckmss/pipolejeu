@@ -29,7 +29,7 @@ body {
 
 #volet {
     position: absolute;
-    left: -420px; /* test fixed + scroll, on retire la position top */
+    left: -405px; /* test fixed + scroll, on retire la position top */
     -webkit-transition: all .5s ease-in;
     -moz-transition: all .5s ease-in;
     transition: all .5s ease-in;

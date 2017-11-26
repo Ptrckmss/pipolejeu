@@ -5,6 +5,11 @@ body {
 
 /* code du tutoriel ci-dessous */
 
+@font-face {
+    font-family: Chewy;
+    src: url('../font/Chewy-Regular.ttf');
+}
+
 #tagline{
     font-size: 50px;
     font-weight: bold ;

@@ -6,3 +6,8 @@
 .intro-heading h1 {
     font-family: 'Chewy';
 }
+
+.team-member img{
+    width: 70%;
+    height: auto;
+}
